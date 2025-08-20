@@ -1,0 +1,16 @@
+2025-08-20 22:43:54,517 - DeepfakePreprocessing - INFO - setup_logger:57 - Logging initialized. Log file: /home/oxy/repo/deepfake-detection/logs/preprocessing_20250820_224354.log
+2025-08-20 22:43:54,517 - DeepfakePreprocessing - INFO - main:317 - 🚀 Starting Deepfake Data Preprocessing
+2025-08-20 22:43:54,517 - DeepfakePreprocessing - INFO - main:318 - ============================================================
+2025-08-20 22:43:54,517 - DeepfakePreprocessing - INFO - main:325 - Working directory: /home/oxy/repo/deepfake-detection/src
+2025-08-20 22:43:54,517 - DeepfakePreprocessing - INFO - main:335 - 
+📋 Step 1: Loading metadata...
+2025-08-20 22:43:54,517 - DeepfakePreprocessing - INFO - load_metadata:70 - Loading metadata from: /home/oxy/repo/deepfake-detection/data/processed/metadata.csv
+2025-08-20 22:43:54,517 - DeepfakePreprocessing - ERROR - load_metadata:73 - Metadata file not found: /home/oxy/repo/deepfake-detection/data/processed/metadata.csv
+2025-08-20 22:43:54,518 - DeepfakePreprocessing - CRITICAL - main:363 - ❌ Critical error: Metadata file not found: /home/oxy/repo/deepfake-detection/data/processed/metadata.csv
+2025-08-20 22:43:54,518 - DeepfakePreprocessing - DEBUG - main:365 - Traceback (most recent call last):
+  File "/home/oxy/repo/deepfake-detection/src/preprocess_data.py", line 336, in main
+    metadata = loader.load_metadata()
+  File "/home/oxy/repo/deepfake-detection/src/preprocess_data.py", line 74, in load_metadata
+    raise FileNotFoundError(f"Metadata file not found: {self.metadata_path}")
+FileNotFoundError: Metadata file not found: /home/oxy/repo/deepfake-detection/data/processed/metadata.csv
+

@@ -1,0 +1,1477 @@
+2025-08-20 22:49:56,343 - DeepfakePreprocessing - INFO - setup_logger:57 - Logging initialized. Log file: /home/oxy/repo/deepfake-detection/logs/preprocessing_20250820_224956.log
+2025-08-20 22:49:56,343 - DeepfakePreprocessing - INFO - main:317 - 🚀 Starting Deepfake Data Preprocessing
+2025-08-20 22:49:56,343 - DeepfakePreprocessing - INFO - main:318 - ============================================================
+2025-08-20 22:49:56,343 - DeepfakePreprocessing - INFO - main:325 - Working directory: /home/oxy/repo/deepfake-detection/src
+2025-08-20 22:49:56,344 - DeepfakePreprocessing - INFO - main:335 - 
+📋 Step 1: Loading metadata...
+2025-08-20 22:49:56,344 - DeepfakePreprocessing - INFO - load_metadata:70 - Loading metadata from: /home/oxy/repo/deepfake-detection/data/metadata.csv
+2025-08-20 22:49:56,423 - DeepfakePreprocessing - DEBUG - load_metadata:78 - Loaded metadata shape: (95634, 5)
+2025-08-20 22:49:56,453 - DeepfakePreprocessing - INFO - load_metadata:95 - Metadata processed:
+2025-08-20 22:49:56,454 - DeepfakePreprocessing - INFO - load_metadata:96 -   Total samples: 95634
+2025-08-20 22:49:56,454 - DeepfakePreprocessing - INFO - load_metadata:97 -   REAL: 16293 (17.0%)
+2025-08-20 22:49:56,454 - DeepfakePreprocessing - INFO - load_metadata:98 -   FAKE: 79341 (83.0%)
+2025-08-20 22:49:56,454 - DeepfakePreprocessing - INFO - main:339 - 
+🔍 Step 2: Verifying images...
+2025-08-20 22:49:56,454 - DeepfakePreprocessing - INFO - verify_image_files:108 - Verifying images in: /home/oxy/repo/deepfake-detection/data/faces_224
+2025-08-20 22:50:29,391 - DeepfakePreprocessing - INFO - verify_image_files:138 - Image verification results:
+2025-08-20 22:50:29,391 - DeepfakePreprocessing - INFO - verify_image_files:139 -   ✓ Valid: 95634/95634
+2025-08-20 22:50:29,391 - DeepfakePreprocessing - WARNING - verify_image_files:140 -   ✗ Missing: 0
+2025-08-20 22:50:29,391 - DeepfakePreprocessing - ERROR - verify_image_files:141 -   ⚠ Corrupted: 0
+2025-08-20 22:50:29,438 - DeepfakePreprocessing - INFO - verify_image_files:148 - Dataset filtered to 95634 valid samples
+2025-08-20 22:50:29,443 - DeepfakePreprocessing - INFO - main:343 - 
+📦 Step 3: Processing chunks...
+2025-08-20 22:50:29,443 - DeepfakePreprocessing - INFO - process_in_chunks:157 - Processing 95634 samples in 479 chunks of 200
+2025-08-20 22:50:29,443 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 1/479 (200 samples)
+2025-08-20 22:50:33,441 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 1: 200 samples
+2025-08-20 22:50:33,484 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 26 objects
+2025-08-20 22:50:33,484 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 2/479 (200 samples)
+2025-08-20 22:50:37,352 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 2: 200 samples
+2025-08-20 22:50:37,389 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:50:37,389 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 3/479 (200 samples)
+2025-08-20 22:50:41,196 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 3: 200 samples
+2025-08-20 22:50:41,233 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:50:41,233 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 4/479 (200 samples)
+2025-08-20 22:50:45,046 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 4: 200 samples
+2025-08-20 22:50:45,084 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:50:45,084 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 5/479 (200 samples)
+2025-08-20 22:50:49,041 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 5: 200 samples
+2025-08-20 22:50:49,079 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:50:49,079 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 6/479 (200 samples)
+2025-08-20 22:50:52,971 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 6: 200 samples
+2025-08-20 22:50:53,008 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:50:53,008 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 7/479 (200 samples)
+2025-08-20 22:50:56,983 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 7: 200 samples
+2025-08-20 22:50:57,021 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:50:57,021 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 8/479 (200 samples)
+2025-08-20 22:51:00,972 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 8: 200 samples
+2025-08-20 22:51:01,010 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:01,010 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 9/479 (200 samples)
+2025-08-20 22:51:04,955 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 9: 200 samples
+2025-08-20 22:51:04,994 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:04,994 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 10/479 (200 samples)
+2025-08-20 22:51:08,867 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 10: 200 samples
+2025-08-20 22:51:08,903 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:08,903 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 11/479 (200 samples)
+2025-08-20 22:51:13,100 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 11: 200 samples
+2025-08-20 22:51:13,160 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:13,160 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 12/479 (200 samples)
+2025-08-20 22:51:17,237 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 12: 200 samples
+2025-08-20 22:51:17,273 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:17,273 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 13/479 (200 samples)
+2025-08-20 22:51:21,098 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 13: 200 samples
+2025-08-20 22:51:21,135 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:21,135 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 14/479 (200 samples)
+2025-08-20 22:51:24,947 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 14: 200 samples
+2025-08-20 22:51:24,991 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:24,992 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 15/479 (200 samples)
+2025-08-20 22:51:28,780 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 15: 200 samples
+2025-08-20 22:51:28,823 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:28,824 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 16/479 (200 samples)
+2025-08-20 22:51:32,587 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 16: 200 samples
+2025-08-20 22:51:32,624 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:32,624 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 17/479 (200 samples)
+2025-08-20 22:51:36,359 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 17: 200 samples
+2025-08-20 22:51:36,395 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:36,395 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 18/479 (200 samples)
+2025-08-20 22:51:40,254 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 18: 200 samples
+2025-08-20 22:51:40,289 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:40,290 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 19/479 (200 samples)
+2025-08-20 22:51:44,131 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 19: 200 samples
+2025-08-20 22:51:44,183 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:44,183 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 20/479 (200 samples)
+2025-08-20 22:51:48,178 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 20: 200 samples
+2025-08-20 22:51:48,216 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:48,216 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 21/479 (200 samples)
+2025-08-20 22:51:52,000 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 21: 200 samples
+2025-08-20 22:51:52,034 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:52,035 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 22/479 (200 samples)
+2025-08-20 22:51:55,803 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 22: 200 samples
+2025-08-20 22:51:55,839 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:55,840 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 23/479 (200 samples)
+2025-08-20 22:51:59,573 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 23: 200 samples
+2025-08-20 22:51:59,607 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:51:59,607 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 24/479 (200 samples)
+2025-08-20 22:52:03,360 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 24: 200 samples
+2025-08-20 22:52:03,395 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:03,395 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 25/479 (200 samples)
+2025-08-20 22:52:07,207 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 25: 200 samples
+2025-08-20 22:52:07,241 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:07,242 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 26/479 (200 samples)
+2025-08-20 22:52:11,081 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 26: 200 samples
+2025-08-20 22:52:11,115 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:11,115 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 27/479 (200 samples)
+2025-08-20 22:52:14,962 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 27: 200 samples
+2025-08-20 22:52:14,997 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:14,997 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 28/479 (200 samples)
+2025-08-20 22:52:18,693 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 28: 200 samples
+2025-08-20 22:52:18,726 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:18,726 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 29/479 (200 samples)
+2025-08-20 22:52:22,469 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 29: 200 samples
+2025-08-20 22:52:22,504 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:22,504 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 30/479 (200 samples)
+2025-08-20 22:52:26,246 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 30: 200 samples
+2025-08-20 22:52:26,279 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:26,280 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 31/479 (200 samples)
+2025-08-20 22:52:30,057 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 31: 200 samples
+2025-08-20 22:52:30,091 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:30,092 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 32/479 (200 samples)
+2025-08-20 22:52:33,744 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 32: 200 samples
+2025-08-20 22:52:33,792 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:33,793 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 33/479 (200 samples)
+2025-08-20 22:52:37,585 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 33: 200 samples
+2025-08-20 22:52:37,619 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:37,619 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 34/479 (200 samples)
+2025-08-20 22:52:41,627 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 34: 200 samples
+2025-08-20 22:52:41,663 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:41,664 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 35/479 (200 samples)
+2025-08-20 22:52:45,475 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 35: 200 samples
+2025-08-20 22:52:45,511 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:45,512 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 36/479 (200 samples)
+2025-08-20 22:52:49,214 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 36: 200 samples
+2025-08-20 22:52:49,248 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:49,248 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 37/479 (200 samples)
+2025-08-20 22:52:53,094 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 37: 200 samples
+2025-08-20 22:52:53,128 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:53,128 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 38/479 (200 samples)
+2025-08-20 22:52:56,885 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 38: 200 samples
+2025-08-20 22:52:56,919 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:52:56,919 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 39/479 (200 samples)
+2025-08-20 22:53:00,724 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 39: 200 samples
+2025-08-20 22:53:00,758 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:00,758 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 40/479 (200 samples)
+2025-08-20 22:53:04,627 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 40: 200 samples
+2025-08-20 22:53:04,663 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:04,663 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 41/479 (200 samples)
+2025-08-20 22:53:08,342 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 41: 200 samples
+2025-08-20 22:53:08,377 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:08,377 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 42/479 (200 samples)
+2025-08-20 22:53:12,152 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 42: 200 samples
+2025-08-20 22:53:12,190 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:12,190 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 43/479 (200 samples)
+2025-08-20 22:53:15,919 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 43: 200 samples
+2025-08-20 22:53:15,954 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:15,954 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 44/479 (200 samples)
+2025-08-20 22:53:19,659 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 44: 200 samples
+2025-08-20 22:53:19,693 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:19,694 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 45/479 (200 samples)
+2025-08-20 22:53:23,507 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 45: 200 samples
+2025-08-20 22:53:23,543 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:23,544 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 46/479 (200 samples)
+2025-08-20 22:53:27,291 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 46: 200 samples
+2025-08-20 22:53:27,324 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:27,324 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 47/479 (200 samples)
+2025-08-20 22:53:31,105 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 47: 200 samples
+2025-08-20 22:53:31,143 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:31,143 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 48/479 (200 samples)
+2025-08-20 22:53:35,031 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 48: 200 samples
+2025-08-20 22:53:35,067 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:35,067 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 49/479 (200 samples)
+2025-08-20 22:53:38,794 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 49: 200 samples
+2025-08-20 22:53:38,832 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:38,832 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 50/479 (200 samples)
+2025-08-20 22:53:42,644 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 50: 200 samples
+2025-08-20 22:53:42,681 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:42,681 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 51/479 (200 samples)
+2025-08-20 22:53:46,434 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 51: 200 samples
+2025-08-20 22:53:46,483 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:46,483 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 52/479 (200 samples)
+2025-08-20 22:53:50,291 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 52: 200 samples
+2025-08-20 22:53:50,327 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:50,327 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 53/479 (200 samples)
+2025-08-20 22:53:54,012 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 53: 200 samples
+2025-08-20 22:53:54,046 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:54,046 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 54/479 (200 samples)
+2025-08-20 22:53:57,884 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 54: 200 samples
+2025-08-20 22:53:57,918 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:53:57,918 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 55/479 (200 samples)
+2025-08-20 22:54:01,733 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 55: 200 samples
+2025-08-20 22:54:01,769 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:01,769 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 56/479 (200 samples)
+2025-08-20 22:54:05,559 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 56: 200 samples
+2025-08-20 22:54:05,593 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:05,593 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 57/479 (200 samples)
+2025-08-20 22:54:09,333 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 57: 200 samples
+2025-08-20 22:54:09,367 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:09,367 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 58/479 (200 samples)
+2025-08-20 22:54:13,169 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 58: 200 samples
+2025-08-20 22:54:13,205 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:13,206 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 59/479 (200 samples)
+2025-08-20 22:54:16,965 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 59: 200 samples
+2025-08-20 22:54:16,999 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:16,999 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 60/479 (200 samples)
+2025-08-20 22:54:20,797 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 60: 200 samples
+2025-08-20 22:54:20,831 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:20,831 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 61/479 (200 samples)
+2025-08-20 22:54:24,607 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 61: 200 samples
+2025-08-20 22:54:24,643 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:24,643 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 62/479 (200 samples)
+2025-08-20 22:54:28,501 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 62: 200 samples
+2025-08-20 22:54:28,536 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:28,537 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 63/479 (200 samples)
+2025-08-20 22:54:32,281 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 63: 200 samples
+2025-08-20 22:54:32,319 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:32,319 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 64/479 (200 samples)
+2025-08-20 22:54:36,118 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 64: 200 samples
+2025-08-20 22:54:36,151 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:36,151 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 65/479 (200 samples)
+2025-08-20 22:54:39,803 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 65: 200 samples
+2025-08-20 22:54:39,837 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:39,837 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 66/479 (200 samples)
+2025-08-20 22:54:43,600 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 66: 200 samples
+2025-08-20 22:54:43,636 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:43,637 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 67/479 (200 samples)
+2025-08-20 22:54:47,480 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 67: 200 samples
+2025-08-20 22:54:47,515 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:47,515 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 68/479 (200 samples)
+2025-08-20 22:54:51,301 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 68: 200 samples
+2025-08-20 22:54:51,336 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:51,336 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 69/479 (200 samples)
+2025-08-20 22:54:55,171 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 69: 200 samples
+2025-08-20 22:54:55,207 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:55,207 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 70/479 (200 samples)
+2025-08-20 22:54:58,971 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 70: 200 samples
+2025-08-20 22:54:59,006 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:54:59,006 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 71/479 (200 samples)
+2025-08-20 22:55:02,829 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 71: 200 samples
+2025-08-20 22:55:02,864 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:02,864 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 72/479 (200 samples)
+2025-08-20 22:55:06,615 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 72: 200 samples
+2025-08-20 22:55:06,649 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:06,649 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 73/479 (200 samples)
+2025-08-20 22:55:10,458 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 73: 200 samples
+2025-08-20 22:55:10,494 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:10,494 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 74/479 (200 samples)
+2025-08-20 22:55:14,198 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 74: 200 samples
+2025-08-20 22:55:14,233 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:14,234 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 75/479 (200 samples)
+2025-08-20 22:55:18,016 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 75: 200 samples
+2025-08-20 22:55:18,051 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:18,051 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 76/479 (200 samples)
+2025-08-20 22:55:21,859 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 76: 200 samples
+2025-08-20 22:55:21,895 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:21,895 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 77/479 (200 samples)
+2025-08-20 22:55:25,637 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 77: 200 samples
+2025-08-20 22:55:25,672 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:25,673 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 78/479 (200 samples)
+2025-08-20 22:55:29,453 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 78: 200 samples
+2025-08-20 22:55:29,487 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:29,488 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 79/479 (200 samples)
+2025-08-20 22:55:33,255 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 79: 200 samples
+2025-08-20 22:55:33,290 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:33,290 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 80/479 (200 samples)
+2025-08-20 22:55:37,187 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 80: 200 samples
+2025-08-20 22:55:37,223 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:37,223 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 81/479 (200 samples)
+2025-08-20 22:55:40,979 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 81: 200 samples
+2025-08-20 22:55:41,015 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:41,015 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 82/479 (200 samples)
+2025-08-20 22:55:44,872 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 82: 200 samples
+2025-08-20 22:55:44,914 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:44,914 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 83/479 (200 samples)
+2025-08-20 22:55:48,686 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 83: 200 samples
+2025-08-20 22:55:48,720 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:48,720 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 84/479 (200 samples)
+2025-08-20 22:55:52,452 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 84: 200 samples
+2025-08-20 22:55:52,485 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:52,486 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 85/479 (200 samples)
+2025-08-20 22:55:56,270 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 85: 200 samples
+2025-08-20 22:55:56,304 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:55:56,305 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 86/479 (200 samples)
+2025-08-20 22:56:00,049 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 86: 200 samples
+2025-08-20 22:56:00,084 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:00,084 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 87/479 (200 samples)
+2025-08-20 22:56:03,887 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 87: 200 samples
+2025-08-20 22:56:03,931 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:03,931 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 88/479 (200 samples)
+2025-08-20 22:56:07,764 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 88: 200 samples
+2025-08-20 22:56:07,815 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:07,815 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 89/479 (200 samples)
+2025-08-20 22:56:11,606 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 89: 200 samples
+2025-08-20 22:56:11,641 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:11,641 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 90/479 (200 samples)
+2025-08-20 22:56:15,436 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 90: 200 samples
+2025-08-20 22:56:15,482 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:15,482 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 91/479 (200 samples)
+2025-08-20 22:56:19,155 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 91: 200 samples
+2025-08-20 22:56:19,189 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:19,189 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 92/479 (200 samples)
+2025-08-20 22:56:22,973 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 92: 200 samples
+2025-08-20 22:56:23,007 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:23,007 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 93/479 (200 samples)
+2025-08-20 22:56:26,625 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 93: 200 samples
+2025-08-20 22:56:26,663 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:26,663 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 94/479 (200 samples)
+2025-08-20 22:56:30,438 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 94: 200 samples
+2025-08-20 22:56:30,475 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:30,476 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 95/479 (200 samples)
+2025-08-20 22:56:34,222 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 95: 200 samples
+2025-08-20 22:56:34,256 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:34,256 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 96/479 (200 samples)
+2025-08-20 22:56:38,160 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 96: 200 samples
+2025-08-20 22:56:38,195 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:38,195 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 97/479 (200 samples)
+2025-08-20 22:56:41,936 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 97: 200 samples
+2025-08-20 22:56:41,972 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:41,972 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 98/479 (200 samples)
+2025-08-20 22:56:45,829 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 98: 200 samples
+2025-08-20 22:56:45,875 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:45,876 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 99/479 (200 samples)
+2025-08-20 22:56:49,713 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 99: 200 samples
+2025-08-20 22:56:49,754 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:49,754 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 100/479 (200 samples)
+2025-08-20 22:56:53,537 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 100: 200 samples
+2025-08-20 22:56:53,570 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:53,570 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 101/479 (200 samples)
+2025-08-20 22:56:57,409 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 101: 200 samples
+2025-08-20 22:56:57,443 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:56:57,443 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 102/479 (200 samples)
+2025-08-20 22:57:01,255 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 102: 200 samples
+2025-08-20 22:57:01,288 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:01,289 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 103/479 (200 samples)
+2025-08-20 22:57:04,987 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 103: 200 samples
+2025-08-20 22:57:05,041 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:05,041 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 104/479 (200 samples)
+2025-08-20 22:57:08,928 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 104: 200 samples
+2025-08-20 22:57:08,961 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:08,961 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 105/479 (200 samples)
+2025-08-20 22:57:12,659 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 105: 200 samples
+2025-08-20 22:57:12,696 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:12,696 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 106/479 (200 samples)
+2025-08-20 22:57:16,520 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 106: 200 samples
+2025-08-20 22:57:16,559 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:16,559 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 107/479 (200 samples)
+2025-08-20 22:57:20,262 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 107: 200 samples
+2025-08-20 22:57:20,295 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:20,296 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 108/479 (200 samples)
+2025-08-20 22:57:24,077 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 108: 200 samples
+2025-08-20 22:57:24,128 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:24,128 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 109/479 (200 samples)
+2025-08-20 22:57:27,974 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 109: 200 samples
+2025-08-20 22:57:28,008 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:28,008 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 110/479 (200 samples)
+2025-08-20 22:57:31,660 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 110: 200 samples
+2025-08-20 22:57:31,693 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:31,693 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 111/479 (200 samples)
+2025-08-20 22:57:35,383 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 111: 200 samples
+2025-08-20 22:57:35,432 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:35,433 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 112/479 (200 samples)
+2025-08-20 22:57:39,063 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 112: 200 samples
+2025-08-20 22:57:39,095 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:39,096 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 113/479 (200 samples)
+2025-08-20 22:57:42,821 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 113: 200 samples
+2025-08-20 22:57:42,853 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:42,853 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 114/479 (200 samples)
+2025-08-20 22:57:46,695 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 114: 200 samples
+2025-08-20 22:57:46,734 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:46,735 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 115/479 (200 samples)
+2025-08-20 22:57:50,546 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 115: 200 samples
+2025-08-20 22:57:50,585 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:50,585 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 116/479 (200 samples)
+2025-08-20 22:57:54,360 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 116: 200 samples
+2025-08-20 22:57:54,393 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:54,393 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 117/479 (200 samples)
+2025-08-20 22:57:58,099 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 117: 200 samples
+2025-08-20 22:57:58,133 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:57:58,133 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 118/479 (200 samples)
+2025-08-20 22:58:01,925 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 118: 200 samples
+2025-08-20 22:58:01,957 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:01,957 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 119/479 (200 samples)
+2025-08-20 22:58:05,761 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 119: 200 samples
+2025-08-20 22:58:05,796 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:05,796 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 120/479 (200 samples)
+2025-08-20 22:58:09,511 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 120: 200 samples
+2025-08-20 22:58:09,544 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:09,544 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 121/479 (200 samples)
+2025-08-20 22:58:13,241 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 121: 200 samples
+2025-08-20 22:58:13,275 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:13,275 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 122/479 (200 samples)
+2025-08-20 22:58:17,090 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 122: 200 samples
+2025-08-20 22:58:17,127 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:17,127 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 123/479 (200 samples)
+2025-08-20 22:58:20,824 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 123: 200 samples
+2025-08-20 22:58:20,859 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:20,859 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 124/479 (200 samples)
+2025-08-20 22:58:24,690 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 124: 200 samples
+2025-08-20 22:58:24,729 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:24,729 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 125/479 (200 samples)
+2025-08-20 22:58:28,527 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 125: 200 samples
+2025-08-20 22:58:28,561 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:28,561 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 126/479 (200 samples)
+2025-08-20 22:58:32,342 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 126: 200 samples
+2025-08-20 22:58:32,375 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:32,376 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 127/479 (200 samples)
+2025-08-20 22:58:36,186 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 127: 200 samples
+2025-08-20 22:58:36,218 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:36,218 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 128/479 (200 samples)
+2025-08-20 22:58:40,030 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 128: 200 samples
+2025-08-20 22:58:40,062 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:40,063 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 129/479 (200 samples)
+2025-08-20 22:58:43,825 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 129: 200 samples
+2025-08-20 22:58:43,863 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:43,864 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 130/479 (200 samples)
+2025-08-20 22:58:47,658 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 130: 200 samples
+2025-08-20 22:58:47,692 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:47,692 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 131/479 (200 samples)
+2025-08-20 22:58:51,419 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 131: 200 samples
+2025-08-20 22:58:51,452 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:51,452 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 132/479 (200 samples)
+2025-08-20 22:58:55,210 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 132: 200 samples
+2025-08-20 22:58:55,243 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:55,243 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 133/479 (200 samples)
+2025-08-20 22:58:58,990 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 133: 200 samples
+2025-08-20 22:58:59,022 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:58:59,023 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 134/479 (200 samples)
+2025-08-20 22:59:02,914 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 134: 200 samples
+2025-08-20 22:59:02,947 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:02,947 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 135/479 (200 samples)
+2025-08-20 22:59:06,737 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 135: 200 samples
+2025-08-20 22:59:06,770 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:06,770 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 136/479 (200 samples)
+2025-08-20 22:59:10,434 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 136: 200 samples
+2025-08-20 22:59:10,468 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:10,469 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 137/479 (200 samples)
+2025-08-20 22:59:14,231 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 137: 200 samples
+2025-08-20 22:59:14,263 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:14,263 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 138/479 (200 samples)
+2025-08-20 22:59:18,055 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 138: 200 samples
+2025-08-20 22:59:18,088 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:18,088 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 139/479 (200 samples)
+2025-08-20 22:59:21,827 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 139: 200 samples
+2025-08-20 22:59:21,860 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:21,860 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 140/479 (200 samples)
+2025-08-20 22:59:25,736 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 140: 200 samples
+2025-08-20 22:59:25,772 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:25,772 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 141/479 (200 samples)
+2025-08-20 22:59:29,600 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 141: 200 samples
+2025-08-20 22:59:29,634 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:29,634 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 142/479 (200 samples)
+2025-08-20 22:59:33,367 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 142: 200 samples
+2025-08-20 22:59:33,403 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:33,403 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 143/479 (200 samples)
+2025-08-20 22:59:37,109 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 143: 200 samples
+2025-08-20 22:59:37,141 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:37,142 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 144/479 (200 samples)
+2025-08-20 22:59:40,955 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 144: 200 samples
+2025-08-20 22:59:40,989 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:40,989 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 145/479 (200 samples)
+2025-08-20 22:59:44,832 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 145: 200 samples
+2025-08-20 22:59:44,870 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:44,870 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 146/479 (200 samples)
+2025-08-20 22:59:48,644 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 146: 200 samples
+2025-08-20 22:59:48,678 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:48,678 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 147/479 (200 samples)
+2025-08-20 22:59:52,420 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 147: 200 samples
+2025-08-20 22:59:52,452 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:52,452 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 148/479 (200 samples)
+2025-08-20 22:59:56,196 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 148: 200 samples
+2025-08-20 22:59:56,227 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 22:59:56,228 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 149/479 (200 samples)
+2025-08-20 22:59:59,988 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 149: 200 samples
+2025-08-20 23:00:00,029 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:00,029 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 150/479 (200 samples)
+2025-08-20 23:00:03,704 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 150: 200 samples
+2025-08-20 23:00:03,736 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:03,736 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 151/479 (200 samples)
+2025-08-20 23:00:07,599 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 151: 200 samples
+2025-08-20 23:00:07,633 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:07,633 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 152/479 (200 samples)
+2025-08-20 23:00:11,419 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 152: 200 samples
+2025-08-20 23:00:11,452 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:11,452 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 153/479 (200 samples)
+2025-08-20 23:00:15,303 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 153: 200 samples
+2025-08-20 23:00:15,342 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:15,342 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 154/479 (200 samples)
+2025-08-20 23:00:19,172 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 154: 200 samples
+2025-08-20 23:00:19,214 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:19,214 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 155/479 (200 samples)
+2025-08-20 23:00:23,000 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 155: 200 samples
+2025-08-20 23:00:23,038 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:23,038 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 156/479 (200 samples)
+2025-08-20 23:00:26,867 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 156: 200 samples
+2025-08-20 23:00:26,900 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:26,900 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 157/479 (200 samples)
+2025-08-20 23:00:30,721 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 157: 200 samples
+2025-08-20 23:00:30,754 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:30,754 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 158/479 (200 samples)
+2025-08-20 23:00:34,596 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 158: 200 samples
+2025-08-20 23:00:34,629 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:34,629 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 159/479 (200 samples)
+2025-08-20 23:00:38,387 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 159: 200 samples
+2025-08-20 23:00:38,422 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:38,423 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 160/479 (200 samples)
+2025-08-20 23:00:42,270 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 160: 200 samples
+2025-08-20 23:00:42,304 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:42,304 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 161/479 (200 samples)
+2025-08-20 23:00:45,979 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 161: 200 samples
+2025-08-20 23:00:46,013 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:46,014 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 162/479 (200 samples)
+2025-08-20 23:00:49,750 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 162: 200 samples
+2025-08-20 23:00:49,783 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:49,783 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 163/479 (200 samples)
+2025-08-20 23:00:53,525 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 163: 200 samples
+2025-08-20 23:00:53,563 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:53,563 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 164/479 (200 samples)
+2025-08-20 23:00:57,327 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 164: 200 samples
+2025-08-20 23:00:57,360 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:00:57,360 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 165/479 (200 samples)
+2025-08-20 23:01:01,120 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 165: 200 samples
+2025-08-20 23:01:01,153 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:01,153 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 166/479 (200 samples)
+2025-08-20 23:01:04,918 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 166: 200 samples
+2025-08-20 23:01:04,952 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:04,952 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 167/479 (200 samples)
+2025-08-20 23:01:08,797 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 167: 200 samples
+2025-08-20 23:01:08,830 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:08,831 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 168/479 (200 samples)
+2025-08-20 23:01:12,660 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 168: 200 samples
+2025-08-20 23:01:12,697 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:12,698 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 169/479 (200 samples)
+2025-08-20 23:01:16,482 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 169: 200 samples
+2025-08-20 23:01:16,515 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:16,515 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 170/479 (200 samples)
+2025-08-20 23:01:20,274 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 170: 200 samples
+2025-08-20 23:01:20,309 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:20,309 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 171/479 (200 samples)
+2025-08-20 23:01:24,152 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 171: 200 samples
+2025-08-20 23:01:24,185 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:24,186 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 172/479 (200 samples)
+2025-08-20 23:01:28,009 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 172: 200 samples
+2025-08-20 23:01:28,042 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:28,043 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 173/479 (200 samples)
+2025-08-20 23:01:31,777 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 173: 200 samples
+2025-08-20 23:01:31,813 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:31,813 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 174/479 (200 samples)
+2025-08-20 23:01:35,609 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 174: 200 samples
+2025-08-20 23:01:35,644 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:35,644 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 175/479 (200 samples)
+2025-08-20 23:01:39,442 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 175: 200 samples
+2025-08-20 23:01:39,475 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:39,475 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 176/479 (200 samples)
+2025-08-20 23:01:43,325 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 176: 200 samples
+2025-08-20 23:01:43,366 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:43,366 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 177/479 (200 samples)
+2025-08-20 23:01:47,203 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 177: 200 samples
+2025-08-20 23:01:47,237 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:47,237 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 178/479 (200 samples)
+2025-08-20 23:01:51,028 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 178: 200 samples
+2025-08-20 23:01:51,060 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:51,061 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 179/479 (200 samples)
+2025-08-20 23:01:54,783 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 179: 200 samples
+2025-08-20 23:01:54,817 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:54,818 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 180/479 (200 samples)
+2025-08-20 23:01:58,647 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 180: 200 samples
+2025-08-20 23:01:58,682 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:01:58,683 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 181/479 (200 samples)
+2025-08-20 23:02:02,429 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 181: 200 samples
+2025-08-20 23:02:02,463 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:02,463 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 182/479 (200 samples)
+2025-08-20 23:02:06,286 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 182: 200 samples
+2025-08-20 23:02:06,323 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:06,323 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 183/479 (200 samples)
+2025-08-20 23:02:10,153 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 183: 200 samples
+2025-08-20 23:02:10,188 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:10,188 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 184/479 (200 samples)
+2025-08-20 23:02:14,010 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 184: 200 samples
+2025-08-20 23:02:14,042 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:14,043 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 185/479 (200 samples)
+2025-08-20 23:02:17,795 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 185: 200 samples
+2025-08-20 23:02:17,838 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:17,839 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 186/479 (200 samples)
+2025-08-20 23:02:21,631 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 186: 200 samples
+2025-08-20 23:02:21,664 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:21,664 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 187/479 (200 samples)
+2025-08-20 23:02:25,516 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 187: 200 samples
+2025-08-20 23:02:25,555 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:25,555 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 188/479 (200 samples)
+2025-08-20 23:02:29,466 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 188: 200 samples
+2025-08-20 23:02:29,503 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:29,504 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 189/479 (200 samples)
+2025-08-20 23:02:33,216 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 189: 200 samples
+2025-08-20 23:02:33,249 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:33,250 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 190/479 (200 samples)
+2025-08-20 23:02:37,036 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 190: 200 samples
+2025-08-20 23:02:37,073 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:37,073 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 191/479 (200 samples)
+2025-08-20 23:02:40,963 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 191: 200 samples
+2025-08-20 23:02:40,996 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:40,996 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 192/479 (200 samples)
+2025-08-20 23:02:44,763 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 192: 200 samples
+2025-08-20 23:02:44,805 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:44,805 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 193/479 (200 samples)
+2025-08-20 23:02:48,626 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 193: 200 samples
+2025-08-20 23:02:48,659 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:48,659 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 194/479 (200 samples)
+2025-08-20 23:02:52,365 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 194: 200 samples
+2025-08-20 23:02:52,411 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:52,412 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 195/479 (200 samples)
+2025-08-20 23:02:56,246 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 195: 200 samples
+2025-08-20 23:02:56,279 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:02:56,279 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 196/479 (200 samples)
+2025-08-20 23:02:59,973 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 196: 200 samples
+2025-08-20 23:03:00,008 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:00,008 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 197/479 (200 samples)
+2025-08-20 23:03:03,726 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 197: 200 samples
+2025-08-20 23:03:03,762 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:03,762 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 198/479 (200 samples)
+2025-08-20 23:03:07,480 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 198: 200 samples
+2025-08-20 23:03:07,512 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:07,513 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 199/479 (200 samples)
+2025-08-20 23:03:11,287 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 199: 200 samples
+2025-08-20 23:03:11,321 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:11,322 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 200/479 (200 samples)
+2025-08-20 23:03:15,067 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 200: 200 samples
+2025-08-20 23:03:15,107 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:15,107 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 201/479 (200 samples)
+2025-08-20 23:03:18,855 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 201: 200 samples
+2025-08-20 23:03:18,888 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:18,888 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 202/479 (200 samples)
+2025-08-20 23:03:22,747 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 202: 200 samples
+2025-08-20 23:03:22,787 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:22,787 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 203/479 (200 samples)
+2025-08-20 23:03:26,532 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 203: 200 samples
+2025-08-20 23:03:26,565 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:26,565 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 204/479 (200 samples)
+2025-08-20 23:03:30,413 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 204: 200 samples
+2025-08-20 23:03:30,449 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:30,449 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 205/479 (200 samples)
+2025-08-20 23:03:34,325 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 205: 200 samples
+2025-08-20 23:03:34,361 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:34,362 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 206/479 (200 samples)
+2025-08-20 23:03:38,175 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 206: 200 samples
+2025-08-20 23:03:38,211 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:38,211 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 207/479 (200 samples)
+2025-08-20 23:03:42,059 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 207: 200 samples
+2025-08-20 23:03:42,092 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:42,093 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 208/479 (200 samples)
+2025-08-20 23:03:45,869 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 208: 200 samples
+2025-08-20 23:03:45,901 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:45,902 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 209/479 (200 samples)
+2025-08-20 23:03:49,688 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 209: 200 samples
+2025-08-20 23:03:49,720 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:49,720 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 210/479 (200 samples)
+2025-08-20 23:03:53,485 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 210: 200 samples
+2025-08-20 23:03:53,518 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:53,519 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 211/479 (200 samples)
+2025-08-20 23:03:57,274 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 211: 200 samples
+2025-08-20 23:03:57,307 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:03:57,307 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 212/479 (200 samples)
+2025-08-20 23:04:01,073 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 212: 200 samples
+2025-08-20 23:04:01,110 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:01,110 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 213/479 (200 samples)
+2025-08-20 23:04:04,907 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 213: 200 samples
+2025-08-20 23:04:04,945 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:04,946 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 214/479 (200 samples)
+2025-08-20 23:04:08,763 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 214: 200 samples
+2025-08-20 23:04:08,798 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:08,798 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 215/479 (200 samples)
+2025-08-20 23:04:12,579 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 215: 200 samples
+2025-08-20 23:04:12,613 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:12,613 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 216/479 (200 samples)
+2025-08-20 23:04:16,337 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 216: 200 samples
+2025-08-20 23:04:16,370 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:16,370 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 217/479 (200 samples)
+2025-08-20 23:04:20,068 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 217: 200 samples
+2025-08-20 23:04:20,100 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:20,101 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 218/479 (200 samples)
+2025-08-20 23:04:23,857 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 218: 200 samples
+2025-08-20 23:04:23,894 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:23,894 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 219/479 (200 samples)
+2025-08-20 23:04:27,810 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 219: 200 samples
+2025-08-20 23:04:27,846 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:27,846 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 220/479 (200 samples)
+2025-08-20 23:04:31,596 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 220: 200 samples
+2025-08-20 23:04:31,629 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:31,629 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 221/479 (200 samples)
+2025-08-20 23:04:35,353 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 221: 200 samples
+2025-08-20 23:04:35,385 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:35,385 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 222/479 (200 samples)
+2025-08-20 23:04:39,112 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 222: 200 samples
+2025-08-20 23:04:39,145 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:39,145 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 223/479 (200 samples)
+2025-08-20 23:04:42,825 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 223: 200 samples
+2025-08-20 23:04:42,856 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:42,856 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 224/479 (200 samples)
+2025-08-20 23:04:46,779 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 224: 200 samples
+2025-08-20 23:04:46,833 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:46,833 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 225/479 (200 samples)
+2025-08-20 23:04:50,729 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 225: 200 samples
+2025-08-20 23:04:50,762 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:50,763 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 226/479 (200 samples)
+2025-08-20 23:04:54,519 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 226: 200 samples
+2025-08-20 23:04:54,554 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:54,554 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 227/479 (200 samples)
+2025-08-20 23:04:58,332 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 227: 200 samples
+2025-08-20 23:04:58,365 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:04:58,366 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 228/479 (200 samples)
+2025-08-20 23:05:02,161 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 228: 200 samples
+2025-08-20 23:05:02,196 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:02,196 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 229/479 (200 samples)
+2025-08-20 23:05:05,903 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 229: 200 samples
+2025-08-20 23:05:05,935 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:05,935 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 230/479 (200 samples)
+2025-08-20 23:05:09,762 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 230: 200 samples
+2025-08-20 23:05:09,815 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:09,815 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 231/479 (200 samples)
+2025-08-20 23:05:13,670 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 231: 200 samples
+2025-08-20 23:05:13,707 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:13,707 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 232/479 (200 samples)
+2025-08-20 23:05:17,635 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 232: 200 samples
+2025-08-20 23:05:17,668 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:17,668 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 233/479 (200 samples)
+2025-08-20 23:05:21,476 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 233: 200 samples
+2025-08-20 23:05:21,510 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:21,510 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 234/479 (200 samples)
+2025-08-20 23:05:25,347 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 234: 200 samples
+2025-08-20 23:05:25,383 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:25,383 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 235/479 (200 samples)
+2025-08-20 23:05:28,967 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 235: 200 samples
+2025-08-20 23:05:29,001 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:29,001 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 236/479 (200 samples)
+2025-08-20 23:05:32,758 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 236: 200 samples
+2025-08-20 23:05:32,792 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:32,792 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 237/479 (200 samples)
+2025-08-20 23:05:36,522 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 237: 200 samples
+2025-08-20 23:05:36,554 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:36,554 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 238/479 (200 samples)
+2025-08-20 23:05:40,287 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 238: 200 samples
+2025-08-20 23:05:40,324 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:40,324 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 239/479 (200 samples)
+2025-08-20 23:05:44,167 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 239: 200 samples
+2025-08-20 23:05:44,200 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:44,201 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 240/479 (200 samples)
+2025-08-20 23:05:48,113 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 240: 200 samples
+2025-08-20 23:05:48,147 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:48,147 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 241/479 (200 samples)
+2025-08-20 23:05:52,043 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 241: 200 samples
+2025-08-20 23:05:52,077 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:52,077 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 242/479 (200 samples)
+2025-08-20 23:05:55,877 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 242: 200 samples
+2025-08-20 23:05:55,914 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:55,914 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 243/479 (200 samples)
+2025-08-20 23:05:59,760 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 243: 200 samples
+2025-08-20 23:05:59,795 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:05:59,795 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 244/479 (200 samples)
+2025-08-20 23:06:03,703 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 244: 200 samples
+2025-08-20 23:06:03,736 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:03,736 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 245/479 (200 samples)
+2025-08-20 23:06:07,491 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 245: 200 samples
+2025-08-20 23:06:07,527 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:07,528 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 246/479 (200 samples)
+2025-08-20 23:06:11,171 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 246: 200 samples
+2025-08-20 23:06:11,204 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:11,204 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 247/479 (200 samples)
+2025-08-20 23:06:14,978 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 247: 200 samples
+2025-08-20 23:06:15,012 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:15,013 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 248/479 (200 samples)
+2025-08-20 23:06:18,744 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 248: 200 samples
+2025-08-20 23:06:18,777 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:18,777 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 249/479 (200 samples)
+2025-08-20 23:06:22,550 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 249: 200 samples
+2025-08-20 23:06:22,583 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:22,583 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 250/479 (200 samples)
+2025-08-20 23:06:26,430 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 250: 200 samples
+2025-08-20 23:06:26,464 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:26,464 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 251/479 (200 samples)
+2025-08-20 23:06:30,227 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 251: 200 samples
+2025-08-20 23:06:30,259 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:30,259 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 252/479 (200 samples)
+2025-08-20 23:06:34,049 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 252: 200 samples
+2025-08-20 23:06:34,084 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:34,084 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 253/479 (200 samples)
+2025-08-20 23:06:37,875 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 253: 200 samples
+2025-08-20 23:06:37,911 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:37,912 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 254/479 (200 samples)
+2025-08-20 23:06:41,692 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 254: 200 samples
+2025-08-20 23:06:41,726 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:41,726 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 255/479 (200 samples)
+2025-08-20 23:06:45,644 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 255: 200 samples
+2025-08-20 23:06:45,688 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:45,689 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 256/479 (200 samples)
+2025-08-20 23:06:49,683 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 256: 200 samples
+2025-08-20 23:06:49,715 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:49,716 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 257/479 (200 samples)
+2025-08-20 23:06:53,536 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 257: 200 samples
+2025-08-20 23:06:53,570 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:53,571 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 258/479 (200 samples)
+2025-08-20 23:06:57,404 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 258: 200 samples
+2025-08-20 23:06:57,435 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:06:57,435 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 259/479 (200 samples)
+2025-08-20 23:07:01,233 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 259: 200 samples
+2025-08-20 23:07:01,265 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:01,265 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 260/479 (200 samples)
+2025-08-20 23:07:04,963 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 260: 200 samples
+2025-08-20 23:07:04,996 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:04,996 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 261/479 (200 samples)
+2025-08-20 23:07:08,762 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 261: 200 samples
+2025-08-20 23:07:08,797 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:08,797 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 262/479 (200 samples)
+2025-08-20 23:07:12,664 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 262: 200 samples
+2025-08-20 23:07:12,697 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:12,698 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 263/479 (200 samples)
+2025-08-20 23:07:16,511 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 263: 200 samples
+2025-08-20 23:07:16,543 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:16,544 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 264/479 (200 samples)
+2025-08-20 23:07:20,319 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 264: 200 samples
+2025-08-20 23:07:20,353 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:20,353 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 265/479 (200 samples)
+2025-08-20 23:07:24,127 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 265: 200 samples
+2025-08-20 23:07:24,162 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:24,162 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 266/479 (200 samples)
+2025-08-20 23:07:27,860 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 266: 200 samples
+2025-08-20 23:07:27,893 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:27,893 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 267/479 (200 samples)
+2025-08-20 23:07:31,693 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 267: 200 samples
+2025-08-20 23:07:31,727 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:31,727 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 268/479 (200 samples)
+2025-08-20 23:07:35,551 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 268: 200 samples
+2025-08-20 23:07:35,587 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:35,588 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 269/479 (200 samples)
+2025-08-20 23:07:39,563 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 269: 200 samples
+2025-08-20 23:07:39,595 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:39,596 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 270/479 (200 samples)
+2025-08-20 23:07:43,338 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 270: 200 samples
+2025-08-20 23:07:43,371 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:43,372 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 271/479 (200 samples)
+2025-08-20 23:07:47,214 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 271: 200 samples
+2025-08-20 23:07:47,246 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:47,247 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 272/479 (200 samples)
+2025-08-20 23:07:51,006 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 272: 200 samples
+2025-08-20 23:07:51,038 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:51,038 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 273/479 (200 samples)
+2025-08-20 23:07:54,783 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 273: 200 samples
+2025-08-20 23:07:54,820 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:54,820 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 274/479 (200 samples)
+2025-08-20 23:07:58,591 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 274: 200 samples
+2025-08-20 23:07:58,642 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:07:58,642 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 275/479 (200 samples)
+2025-08-20 23:08:02,446 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 275: 200 samples
+2025-08-20 23:08:02,492 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:02,492 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 276/479 (200 samples)
+2025-08-20 23:08:06,237 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 276: 200 samples
+2025-08-20 23:08:06,269 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:06,269 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 277/479 (200 samples)
+2025-08-20 23:08:10,093 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 277: 200 samples
+2025-08-20 23:08:10,125 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:10,126 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 278/479 (200 samples)
+2025-08-20 23:08:13,945 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 278: 200 samples
+2025-08-20 23:08:13,978 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:13,978 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 279/479 (200 samples)
+2025-08-20 23:08:17,757 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 279: 200 samples
+2025-08-20 23:08:17,789 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:17,790 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 280/479 (200 samples)
+2025-08-20 23:08:21,626 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 280: 200 samples
+2025-08-20 23:08:21,659 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:21,659 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 281/479 (200 samples)
+2025-08-20 23:08:25,416 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 281: 200 samples
+2025-08-20 23:08:25,450 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:25,450 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 282/479 (200 samples)
+2025-08-20 23:08:29,241 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 282: 200 samples
+2025-08-20 23:08:29,274 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:29,274 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 283/479 (200 samples)
+2025-08-20 23:08:33,127 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 283: 200 samples
+2025-08-20 23:08:33,187 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:33,187 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 284/479 (200 samples)
+2025-08-20 23:08:37,075 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 284: 200 samples
+2025-08-20 23:08:37,108 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:37,109 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 285/479 (200 samples)
+2025-08-20 23:08:40,765 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 285: 200 samples
+2025-08-20 23:08:40,801 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:40,801 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 286/479 (200 samples)
+2025-08-20 23:08:44,568 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 286: 200 samples
+2025-08-20 23:08:44,600 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:44,600 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 287/479 (200 samples)
+2025-08-20 23:08:48,396 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 287: 200 samples
+2025-08-20 23:08:48,427 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:48,427 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 288/479 (200 samples)
+2025-08-20 23:08:52,190 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 288: 200 samples
+2025-08-20 23:08:52,223 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:52,223 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 289/479 (200 samples)
+2025-08-20 23:08:55,917 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 289: 200 samples
+2025-08-20 23:08:55,949 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:55,949 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 290/479 (200 samples)
+2025-08-20 23:08:59,671 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 290: 200 samples
+2025-08-20 23:08:59,706 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:08:59,706 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 291/479 (200 samples)
+2025-08-20 23:09:03,522 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 291: 200 samples
+2025-08-20 23:09:03,554 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:03,555 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 292/479 (200 samples)
+2025-08-20 23:09:07,294 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 292: 200 samples
+2025-08-20 23:09:07,327 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:07,327 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 293/479 (200 samples)
+2025-08-20 23:09:11,005 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 293: 200 samples
+2025-08-20 23:09:11,038 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:11,038 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 294/479 (200 samples)
+2025-08-20 23:09:14,737 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 294: 200 samples
+2025-08-20 23:09:14,769 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:14,769 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 295/479 (200 samples)
+2025-08-20 23:09:18,579 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 295: 200 samples
+2025-08-20 23:09:18,611 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:18,611 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 296/479 (200 samples)
+2025-08-20 23:09:22,411 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 296: 200 samples
+2025-08-20 23:09:22,466 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:22,467 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 297/479 (200 samples)
+2025-08-20 23:09:26,324 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 297: 200 samples
+2025-08-20 23:09:26,358 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:26,358 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 298/479 (200 samples)
+2025-08-20 23:09:30,145 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 298: 200 samples
+2025-08-20 23:09:30,177 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:30,177 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 299/479 (200 samples)
+2025-08-20 23:09:33,877 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 299: 200 samples
+2025-08-20 23:09:33,911 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:33,911 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 300/479 (200 samples)
+2025-08-20 23:09:37,710 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 300: 200 samples
+2025-08-20 23:09:37,743 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:37,744 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 301/479 (200 samples)
+2025-08-20 23:09:41,514 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 301: 200 samples
+2025-08-20 23:09:41,546 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:41,546 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 302/479 (200 samples)
+2025-08-20 23:09:45,333 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 302: 200 samples
+2025-08-20 23:09:45,365 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:45,366 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 303/479 (200 samples)
+2025-08-20 23:09:49,137 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 303: 200 samples
+2025-08-20 23:09:49,172 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:49,172 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 304/479 (200 samples)
+2025-08-20 23:09:52,987 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 304: 200 samples
+2025-08-20 23:09:53,019 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:53,020 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 305/479 (200 samples)
+2025-08-20 23:09:56,754 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 305: 200 samples
+2025-08-20 23:09:56,789 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:09:56,790 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 306/479 (200 samples)
+2025-08-20 23:10:00,559 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 306: 200 samples
+2025-08-20 23:10:00,592 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:00,592 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 307/479 (200 samples)
+2025-08-20 23:10:04,284 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 307: 200 samples
+2025-08-20 23:10:04,327 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:04,328 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 308/479 (200 samples)
+2025-08-20 23:10:08,126 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 308: 200 samples
+2025-08-20 23:10:08,158 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:08,159 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 309/479 (200 samples)
+2025-08-20 23:10:11,973 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 309: 200 samples
+2025-08-20 23:10:12,007 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:12,007 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 310/479 (200 samples)
+2025-08-20 23:10:15,784 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 310: 200 samples
+2025-08-20 23:10:15,819 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:15,819 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 311/479 (200 samples)
+2025-08-20 23:10:19,619 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 311: 200 samples
+2025-08-20 23:10:19,652 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:19,652 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 312/479 (200 samples)
+2025-08-20 23:10:23,425 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 312: 200 samples
+2025-08-20 23:10:23,457 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:23,458 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 313/479 (200 samples)
+2025-08-20 23:10:27,196 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 313: 200 samples
+2025-08-20 23:10:27,229 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:27,229 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 314/479 (200 samples)
+2025-08-20 23:10:31,059 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 314: 200 samples
+2025-08-20 23:10:31,091 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:31,091 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 315/479 (200 samples)
+2025-08-20 23:10:34,719 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 315: 200 samples
+2025-08-20 23:10:34,750 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:34,751 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 316/479 (200 samples)
+2025-08-20 23:10:38,446 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 316: 200 samples
+2025-08-20 23:10:38,478 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:38,478 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 317/479 (200 samples)
+2025-08-20 23:10:42,210 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 317: 200 samples
+2025-08-20 23:10:42,242 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:42,242 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 318/479 (200 samples)
+2025-08-20 23:10:46,032 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 318: 200 samples
+2025-08-20 23:10:46,068 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:46,069 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 319/479 (200 samples)
+2025-08-20 23:10:49,804 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 319: 200 samples
+2025-08-20 23:10:49,836 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:49,837 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 320/479 (200 samples)
+2025-08-20 23:10:53,518 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 320: 200 samples
+2025-08-20 23:10:53,550 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:53,550 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 321/479 (200 samples)
+2025-08-20 23:10:57,405 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 321: 200 samples
+2025-08-20 23:10:57,437 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:10:57,438 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 322/479 (200 samples)
+2025-08-20 23:11:01,140 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 322: 200 samples
+2025-08-20 23:11:01,176 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:01,176 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 323/479 (200 samples)
+2025-08-20 23:11:04,960 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 323: 200 samples
+2025-08-20 23:11:04,992 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:04,993 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 324/479 (200 samples)
+2025-08-20 23:11:08,766 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 324: 200 samples
+2025-08-20 23:11:08,800 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:08,801 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 325/479 (200 samples)
+2025-08-20 23:11:12,502 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 325: 200 samples
+2025-08-20 23:11:12,535 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:12,535 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 326/479 (200 samples)
+2025-08-20 23:11:16,347 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 326: 200 samples
+2025-08-20 23:11:16,380 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:16,380 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 327/479 (200 samples)
+2025-08-20 23:11:20,148 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 327: 200 samples
+2025-08-20 23:11:20,180 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:20,180 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 328/479 (200 samples)
+2025-08-20 23:11:24,023 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 328: 200 samples
+2025-08-20 23:11:24,056 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:24,057 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 329/479 (200 samples)
+2025-08-20 23:11:27,926 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 329: 200 samples
+2025-08-20 23:11:27,970 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:27,971 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 330/479 (200 samples)
+2025-08-20 23:11:31,652 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 330: 200 samples
+2025-08-20 23:11:31,685 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:31,685 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 331/479 (200 samples)
+2025-08-20 23:11:35,403 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 331: 200 samples
+2025-08-20 23:11:35,436 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:35,436 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 332/479 (200 samples)
+2025-08-20 23:11:39,158 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 332: 200 samples
+2025-08-20 23:11:39,194 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:39,194 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 333/479 (200 samples)
+2025-08-20 23:11:42,886 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 333: 200 samples
+2025-08-20 23:11:42,921 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:42,921 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 334/479 (200 samples)
+2025-08-20 23:11:46,754 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 334: 200 samples
+2025-08-20 23:11:46,792 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:46,792 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 335/479 (200 samples)
+2025-08-20 23:11:50,594 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 335: 200 samples
+2025-08-20 23:11:50,633 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:50,633 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 336/479 (200 samples)
+2025-08-20 23:11:54,411 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 336: 200 samples
+2025-08-20 23:11:54,447 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:54,447 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 337/479 (200 samples)
+2025-08-20 23:11:58,189 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 337: 200 samples
+2025-08-20 23:11:58,222 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:11:58,222 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 338/479 (200 samples)
+2025-08-20 23:12:01,907 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 338: 200 samples
+2025-08-20 23:12:01,942 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:01,942 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 339/479 (200 samples)
+2025-08-20 23:12:05,751 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 339: 200 samples
+2025-08-20 23:12:05,785 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:05,785 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 340/479 (200 samples)
+2025-08-20 23:12:09,594 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 340: 200 samples
+2025-08-20 23:12:09,627 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:09,628 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 341/479 (200 samples)
+2025-08-20 23:12:13,413 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 341: 200 samples
+2025-08-20 23:12:13,447 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:13,447 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 342/479 (200 samples)
+2025-08-20 23:12:17,242 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 342: 200 samples
+2025-08-20 23:12:17,275 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:17,275 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 343/479 (200 samples)
+2025-08-20 23:12:20,927 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 343: 200 samples
+2025-08-20 23:12:20,961 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:20,961 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 344/479 (200 samples)
+2025-08-20 23:12:24,658 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 344: 200 samples
+2025-08-20 23:12:24,692 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:24,692 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 345/479 (200 samples)
+2025-08-20 23:12:28,490 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 345: 200 samples
+2025-08-20 23:12:28,524 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:28,524 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 346/479 (200 samples)
+2025-08-20 23:12:32,326 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 346: 200 samples
+2025-08-20 23:12:32,360 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:32,360 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 347/479 (200 samples)
+2025-08-20 23:12:36,234 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 347: 200 samples
+2025-08-20 23:12:36,266 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:36,267 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 348/479 (200 samples)
+2025-08-20 23:12:40,092 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 348: 200 samples
+2025-08-20 23:12:40,124 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:40,125 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 349/479 (200 samples)
+2025-08-20 23:12:43,996 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 349: 200 samples
+2025-08-20 23:12:44,028 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:44,028 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 350/479 (200 samples)
+2025-08-20 23:12:47,934 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 350: 200 samples
+2025-08-20 23:12:47,970 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:47,970 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 351/479 (200 samples)
+2025-08-20 23:12:51,671 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 351: 200 samples
+2025-08-20 23:12:51,704 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:51,705 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 352/479 (200 samples)
+2025-08-20 23:12:55,325 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 352: 200 samples
+2025-08-20 23:12:55,360 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:55,361 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 353/479 (200 samples)
+2025-08-20 23:12:59,067 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 353: 200 samples
+2025-08-20 23:12:59,115 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:12:59,116 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 354/479 (200 samples)
+2025-08-20 23:13:02,849 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 354: 200 samples
+2025-08-20 23:13:02,882 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:02,883 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 355/479 (200 samples)
+2025-08-20 23:13:06,680 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 355: 200 samples
+2025-08-20 23:13:06,714 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:06,714 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 356/479 (200 samples)
+2025-08-20 23:13:10,490 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 356: 200 samples
+2025-08-20 23:13:10,524 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:10,524 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 357/479 (200 samples)
+2025-08-20 23:13:14,253 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 357: 200 samples
+2025-08-20 23:13:14,287 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:14,287 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 358/479 (200 samples)
+2025-08-20 23:13:18,066 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 358: 200 samples
+2025-08-20 23:13:18,100 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:18,101 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 359/479 (200 samples)
+2025-08-20 23:13:21,834 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 359: 200 samples
+2025-08-20 23:13:21,866 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:21,866 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 360/479 (200 samples)
+2025-08-20 23:13:25,604 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 360: 200 samples
+2025-08-20 23:13:25,637 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:25,637 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 361/479 (200 samples)
+2025-08-20 23:13:29,362 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 361: 200 samples
+2025-08-20 23:13:29,396 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:29,397 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 362/479 (200 samples)
+2025-08-20 23:13:33,375 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 362: 200 samples
+2025-08-20 23:13:33,424 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:33,425 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 363/479 (200 samples)
+2025-08-20 23:13:37,135 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 363: 200 samples
+2025-08-20 23:13:37,169 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:37,169 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 364/479 (200 samples)
+2025-08-20 23:13:40,859 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 364: 200 samples
+2025-08-20 23:13:40,909 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:40,910 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 365/479 (200 samples)
+2025-08-20 23:13:44,603 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 365: 200 samples
+2025-08-20 23:13:44,636 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:44,636 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 366/479 (200 samples)
+2025-08-20 23:13:48,366 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 366: 200 samples
+2025-08-20 23:13:48,400 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:48,400 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 367/479 (200 samples)
+2025-08-20 23:13:52,159 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 367: 200 samples
+2025-08-20 23:13:52,196 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:52,196 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 368/479 (200 samples)
+2025-08-20 23:13:55,928 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 368: 200 samples
+2025-08-20 23:13:55,963 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:55,963 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 369/479 (200 samples)
+2025-08-20 23:13:59,665 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 369: 200 samples
+2025-08-20 23:13:59,699 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:13:59,699 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 370/479 (200 samples)
+2025-08-20 23:14:03,424 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 370: 200 samples
+2025-08-20 23:14:03,458 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:03,458 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 371/479 (200 samples)
+2025-08-20 23:14:07,239 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 371: 200 samples
+2025-08-20 23:14:07,273 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:07,273 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 372/479 (200 samples)
+2025-08-20 23:14:10,933 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 372: 200 samples
+2025-08-20 23:14:10,966 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:10,966 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 373/479 (200 samples)
+2025-08-20 23:14:14,799 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 373: 200 samples
+2025-08-20 23:14:14,832 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:14,832 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 374/479 (200 samples)
+2025-08-20 23:14:18,672 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 374: 200 samples
+2025-08-20 23:14:18,709 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:18,710 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 375/479 (200 samples)
+2025-08-20 23:14:22,432 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 375: 200 samples
+2025-08-20 23:14:22,488 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:22,489 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 376/479 (200 samples)
+2025-08-20 23:14:26,216 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 376: 200 samples
+2025-08-20 23:14:26,249 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:26,249 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 377/479 (200 samples)
+2025-08-20 23:14:29,949 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 377: 200 samples
+2025-08-20 23:14:29,983 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:29,983 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 378/479 (200 samples)
+2025-08-20 23:14:33,688 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 378: 200 samples
+2025-08-20 23:14:33,721 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:33,721 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 379/479 (200 samples)
+2025-08-20 23:14:37,478 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 379: 200 samples
+2025-08-20 23:14:37,512 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:37,513 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 380/479 (200 samples)
+2025-08-20 23:14:41,214 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 380: 200 samples
+2025-08-20 23:14:41,247 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:41,247 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 381/479 (200 samples)
+2025-08-20 23:14:45,013 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 381: 200 samples
+2025-08-20 23:14:45,045 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:45,046 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 382/479 (200 samples)
+2025-08-20 23:14:48,819 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 382: 200 samples
+2025-08-20 23:14:48,853 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:48,853 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 383/479 (200 samples)
+2025-08-20 23:14:52,543 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 383: 200 samples
+2025-08-20 23:14:52,576 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:52,576 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 384/479 (200 samples)
+2025-08-20 23:14:56,280 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 384: 200 samples
+2025-08-20 23:14:56,314 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:14:56,314 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 385/479 (200 samples)
+2025-08-20 23:15:00,132 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 385: 200 samples
+2025-08-20 23:15:00,166 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:00,166 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 386/479 (200 samples)
+2025-08-20 23:15:03,915 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 386: 200 samples
+2025-08-20 23:15:03,948 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:03,949 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 387/479 (200 samples)
+2025-08-20 23:15:07,719 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 387: 200 samples
+2025-08-20 23:15:07,753 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:07,753 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 388/479 (200 samples)
+2025-08-20 23:15:11,453 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 388: 200 samples
+2025-08-20 23:15:11,497 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:11,497 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 389/479 (200 samples)
+2025-08-20 23:15:15,250 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 389: 200 samples
+2025-08-20 23:15:15,284 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:15,284 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 390/479 (200 samples)
+2025-08-20 23:15:19,127 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 390: 200 samples
+2025-08-20 23:15:19,161 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:19,161 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 391/479 (200 samples)
+2025-08-20 23:15:22,795 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 391: 200 samples
+2025-08-20 23:15:22,828 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:22,829 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 392/479 (200 samples)
+2025-08-20 23:15:26,482 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 392: 200 samples
+2025-08-20 23:15:26,516 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:26,516 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 393/479 (200 samples)
+2025-08-20 23:15:30,245 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 393: 200 samples
+2025-08-20 23:15:30,278 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:30,278 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 394/479 (200 samples)
+2025-08-20 23:15:33,900 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 394: 200 samples
+2025-08-20 23:15:33,932 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:33,933 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 395/479 (200 samples)
+2025-08-20 23:15:37,660 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 395: 200 samples
+2025-08-20 23:15:37,695 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:37,695 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 396/479 (200 samples)
+2025-08-20 23:15:41,489 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 396: 200 samples
+2025-08-20 23:15:41,522 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:41,523 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 397/479 (200 samples)
+2025-08-20 23:15:45,232 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 397: 200 samples
+2025-08-20 23:15:45,265 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:45,266 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 398/479 (200 samples)
+2025-08-20 23:15:49,058 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 398: 200 samples
+2025-08-20 23:15:49,092 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:49,093 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 399/479 (200 samples)
+2025-08-20 23:15:52,743 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 399: 200 samples
+2025-08-20 23:15:52,790 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:52,790 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 400/479 (200 samples)
+2025-08-20 23:15:56,554 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 400: 200 samples
+2025-08-20 23:15:56,587 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:15:56,587 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 401/479 (200 samples)
+2025-08-20 23:16:00,358 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 401: 200 samples
+2025-08-20 23:16:00,391 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:00,392 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 402/479 (200 samples)
+2025-08-20 23:16:04,156 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 402: 200 samples
+2025-08-20 23:16:04,189 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:04,189 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 403/479 (200 samples)
+2025-08-20 23:16:07,878 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 403: 200 samples
+2025-08-20 23:16:07,911 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:07,912 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 404/479 (200 samples)
+2025-08-20 23:16:11,565 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 404: 200 samples
+2025-08-20 23:16:11,598 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:11,599 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 405/479 (200 samples)
+2025-08-20 23:16:15,443 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 405: 200 samples
+2025-08-20 23:16:15,477 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:15,477 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 406/479 (200 samples)
+2025-08-20 23:16:19,244 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 406: 200 samples
+2025-08-20 23:16:19,278 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:19,278 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 407/479 (200 samples)
+2025-08-20 23:16:22,939 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 407: 200 samples
+2025-08-20 23:16:22,975 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:22,976 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 408/479 (200 samples)
+2025-08-20 23:16:26,782 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 408: 200 samples
+2025-08-20 23:16:26,816 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:26,816 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 409/479 (200 samples)
+2025-08-20 23:16:30,431 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 409: 200 samples
+2025-08-20 23:16:30,465 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:30,465 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 410/479 (200 samples)
+2025-08-20 23:16:34,205 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 410: 200 samples
+2025-08-20 23:16:34,239 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:34,239 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 411/479 (200 samples)
+2025-08-20 23:16:38,003 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 411: 200 samples
+2025-08-20 23:16:38,036 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:38,036 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 412/479 (200 samples)
+2025-08-20 23:16:41,863 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 412: 200 samples
+2025-08-20 23:16:41,897 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:41,897 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 413/479 (200 samples)
+2025-08-20 23:16:45,717 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 413: 200 samples
+2025-08-20 23:16:45,756 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:45,757 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 414/479 (200 samples)
+2025-08-20 23:16:49,631 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 414: 200 samples
+2025-08-20 23:16:49,667 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:49,667 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 415/479 (200 samples)
+2025-08-20 23:16:53,444 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 415: 200 samples
+2025-08-20 23:16:53,479 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:53,479 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 416/479 (200 samples)
+2025-08-20 23:16:57,228 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 416: 200 samples
+2025-08-20 23:16:57,263 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:16:57,264 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 417/479 (200 samples)
+2025-08-20 23:17:01,028 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 417: 200 samples
+2025-08-20 23:17:01,063 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:01,063 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 418/479 (200 samples)
+2025-08-20 23:17:04,730 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 418: 200 samples
+2025-08-20 23:17:04,765 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:04,765 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 419/479 (200 samples)
+2025-08-20 23:17:08,508 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 419: 200 samples
+2025-08-20 23:17:08,542 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:08,542 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 420/479 (200 samples)
+2025-08-20 23:17:12,268 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 420: 200 samples
+2025-08-20 23:17:12,303 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:12,303 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 421/479 (200 samples)
+2025-08-20 23:17:16,103 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 421: 200 samples
+2025-08-20 23:17:16,137 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:16,137 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 422/479 (200 samples)
+2025-08-20 23:17:19,921 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 422: 200 samples
+2025-08-20 23:17:19,955 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:19,955 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 423/479 (200 samples)
+2025-08-20 23:17:23,676 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 423: 200 samples
+2025-08-20 23:17:23,710 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:23,710 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 424/479 (200 samples)
+2025-08-20 23:17:27,402 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 424: 200 samples
+2025-08-20 23:17:27,437 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:27,437 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 425/479 (200 samples)
+2025-08-20 23:17:31,170 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 425: 200 samples
+2025-08-20 23:17:31,204 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:31,204 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 426/479 (200 samples)
+2025-08-20 23:17:34,907 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 426: 200 samples
+2025-08-20 23:17:34,941 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:34,941 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 427/479 (200 samples)
+2025-08-20 23:17:38,731 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 427: 200 samples
+2025-08-20 23:17:38,769 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:38,769 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 428/479 (200 samples)
+2025-08-20 23:17:42,634 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 428: 200 samples
+2025-08-20 23:17:42,668 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:42,668 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 429/479 (200 samples)
+2025-08-20 23:17:46,535 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 429: 200 samples
+2025-08-20 23:17:46,571 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:46,571 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 430/479 (200 samples)
+2025-08-20 23:17:50,271 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 430: 200 samples
+2025-08-20 23:17:50,305 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:50,305 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 431/479 (200 samples)
+2025-08-20 23:17:54,135 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 431: 200 samples
+2025-08-20 23:17:54,170 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:54,170 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 432/479 (200 samples)
+2025-08-20 23:17:57,935 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 432: 200 samples
+2025-08-20 23:17:57,969 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:17:57,969 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 433/479 (200 samples)
+2025-08-20 23:18:01,678 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 433: 200 samples
+2025-08-20 23:18:01,714 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:01,714 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 434/479 (200 samples)
+2025-08-20 23:18:05,480 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 434: 200 samples
+2025-08-20 23:18:05,516 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:05,516 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 435/479 (200 samples)
+2025-08-20 23:18:09,195 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 435: 200 samples
+2025-08-20 23:18:09,228 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:09,228 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 436/479 (200 samples)
+2025-08-20 23:18:12,905 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 436: 200 samples
+2025-08-20 23:18:12,941 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:12,941 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 437/479 (200 samples)
+2025-08-20 23:18:16,616 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 437: 200 samples
+2025-08-20 23:18:16,650 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:16,650 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 438/479 (200 samples)
+2025-08-20 23:18:20,389 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 438: 200 samples
+2025-08-20 23:18:20,425 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:20,425 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 439/479 (200 samples)
+2025-08-20 23:18:24,207 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 439: 200 samples
+2025-08-20 23:18:24,240 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:24,240 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 440/479 (200 samples)
+2025-08-20 23:18:28,000 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 440: 200 samples
+2025-08-20 23:18:28,034 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:28,034 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 441/479 (200 samples)
+2025-08-20 23:18:31,735 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 441: 200 samples
+2025-08-20 23:18:31,768 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:31,768 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 442/479 (200 samples)
+2025-08-20 23:18:35,627 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 442: 200 samples
+2025-08-20 23:18:35,660 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:35,660 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 443/479 (200 samples)
+2025-08-20 23:18:39,379 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 443: 200 samples
+2025-08-20 23:18:39,412 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:39,413 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 444/479 (200 samples)
+2025-08-20 23:18:43,223 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 444: 200 samples
+2025-08-20 23:18:43,257 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:43,257 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 445/479 (200 samples)
+2025-08-20 23:18:46,979 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 445: 200 samples
+2025-08-20 23:18:47,029 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:47,030 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 446/479 (200 samples)
+2025-08-20 23:18:50,798 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 446: 200 samples
+2025-08-20 23:18:50,835 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:50,835 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 447/479 (200 samples)
+2025-08-20 23:18:54,560 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 447: 200 samples
+2025-08-20 23:18:54,595 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:54,596 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 448/479 (200 samples)
+2025-08-20 23:18:58,305 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 448: 200 samples
+2025-08-20 23:18:58,338 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:18:58,338 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 449/479 (200 samples)
+2025-08-20 23:19:02,013 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 449: 200 samples
+2025-08-20 23:19:02,047 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:02,047 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 450/479 (200 samples)
+2025-08-20 23:19:05,874 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 450: 200 samples
+2025-08-20 23:19:05,907 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:05,907 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 451/479 (200 samples)
+2025-08-20 23:19:09,612 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 451: 200 samples
+2025-08-20 23:19:09,644 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:09,644 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 452/479 (200 samples)
+2025-08-20 23:19:13,400 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 452: 200 samples
+2025-08-20 23:19:13,433 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:13,433 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 453/479 (200 samples)
+2025-08-20 23:19:17,254 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 453: 200 samples
+2025-08-20 23:19:17,287 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:17,288 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 454/479 (200 samples)
+2025-08-20 23:19:20,972 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 454: 200 samples
+2025-08-20 23:19:21,010 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:21,011 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 455/479 (200 samples)
+2025-08-20 23:19:24,867 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 455: 200 samples
+2025-08-20 23:19:24,914 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:24,914 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 456/479 (200 samples)
+2025-08-20 23:19:28,702 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 456: 200 samples
+2025-08-20 23:19:28,734 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:28,735 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 457/479 (200 samples)
+2025-08-20 23:19:32,514 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 457: 200 samples
+2025-08-20 23:19:32,547 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:32,548 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 458/479 (200 samples)
+2025-08-20 23:19:36,354 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 458: 200 samples
+2025-08-20 23:19:36,387 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:36,388 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 459/479 (200 samples)
+2025-08-20 23:19:40,137 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 459: 200 samples
+2025-08-20 23:19:40,170 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:40,170 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 460/479 (200 samples)
+2025-08-20 23:19:43,792 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 460: 200 samples
+2025-08-20 23:19:43,825 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:43,825 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 461/479 (200 samples)
+2025-08-20 23:19:47,563 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 461: 200 samples
+2025-08-20 23:19:47,596 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:47,596 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 462/479 (200 samples)
+2025-08-20 23:19:51,338 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 462: 200 samples
+2025-08-20 23:19:51,371 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:51,371 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 463/479 (200 samples)
+2025-08-20 23:19:55,133 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 463: 200 samples
+2025-08-20 23:19:55,165 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:55,166 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 464/479 (200 samples)
+2025-08-20 23:19:59,003 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 464: 200 samples
+2025-08-20 23:19:59,036 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:19:59,036 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 465/479 (200 samples)
+2025-08-20 23:20:02,800 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 465: 200 samples
+2025-08-20 23:20:02,834 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:02,834 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 466/479 (200 samples)
+2025-08-20 23:20:06,611 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 466: 200 samples
+2025-08-20 23:20:06,646 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:06,646 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 467/479 (200 samples)
+2025-08-20 23:20:10,408 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 467: 200 samples
+2025-08-20 23:20:10,443 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:10,443 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 468/479 (200 samples)
+2025-08-20 23:20:14,077 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 468: 200 samples
+2025-08-20 23:20:14,114 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:14,115 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 469/479 (200 samples)
+2025-08-20 23:20:17,872 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 469: 200 samples
+2025-08-20 23:20:17,918 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:17,919 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 470/479 (200 samples)
+2025-08-20 23:20:21,680 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 470: 200 samples
+2025-08-20 23:20:21,712 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:21,713 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 471/479 (200 samples)
+2025-08-20 23:20:25,495 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 471: 200 samples
+2025-08-20 23:20:25,536 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:25,537 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 472/479 (200 samples)
+2025-08-20 23:20:29,342 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 472: 200 samples
+2025-08-20 23:20:29,374 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:29,374 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 473/479 (200 samples)
+2025-08-20 23:20:33,092 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 473: 200 samples
+2025-08-20 23:20:33,124 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:33,124 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 474/479 (200 samples)
+2025-08-20 23:20:37,007 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 474: 200 samples
+2025-08-20 23:20:37,041 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:37,042 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 475/479 (200 samples)
+2025-08-20 23:20:40,851 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 475: 200 samples
+2025-08-20 23:20:40,896 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:40,896 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 476/479 (200 samples)
+2025-08-20 23:20:44,693 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 476: 200 samples
+2025-08-20 23:20:44,728 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:44,728 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 477/479 (200 samples)
+2025-08-20 23:20:48,474 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 477: 200 samples
+2025-08-20 23:20:48,508 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:48,508 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 478/479 (200 samples)
+2025-08-20 23:20:52,264 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 478: 200 samples
+2025-08-20 23:20:52,298 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:52,298 - DeepfakePreprocessing - INFO - process_in_chunks:172 - Processing chunk 479/479 (34 samples)
+2025-08-20 23:20:52,910 - DeepfakePreprocessing - INFO - process_in_chunks:182 - ✓ Saved chunk 479: 34 samples
+2025-08-20 23:20:52,944 - DeepfakePreprocessing - DEBUG - process_in_chunks:187 - Memory freed: 0 objects
+2025-08-20 23:20:52,944 - DeepfakePreprocessing - INFO - process_in_chunks:195 - Created 479 chunk files
+2025-08-20 23:20:52,944 - DeepfakePreprocessing - INFO - main:350 - 
+🔀 Step 4: Creating splits...
+2025-08-20 23:20:52,944 - DeepfakePreprocessing - INFO - create_data_splits:236 - Creating data splits...
+2025-08-20 23:20:53,198 - DeepfakePreprocessing - INFO - create_data_splits:259 - Total samples for splitting: 95634
+2025-08-20 23:20:53,233 - DeepfakePreprocessing - INFO - create_data_splits:285 - Train: 66943 samples (70.0%)
+2025-08-20 23:20:53,233 - DeepfakePreprocessing - INFO - create_data_splits:286 -   REAL: 11405, FAKE: 55538
+2025-08-20 23:20:53,233 - DeepfakePreprocessing - INFO - create_data_splits:285 - Validation: 14345 samples (15.0%)
+2025-08-20 23:20:53,233 - DeepfakePreprocessing - INFO - create_data_splits:286 -   REAL: 2444, FAKE: 11901
+2025-08-20 23:20:53,233 - DeepfakePreprocessing - INFO - create_data_splits:285 - Test: 14346 samples (15.0%)
+2025-08-20 23:20:53,233 - DeepfakePreprocessing - INFO - create_data_splits:286 -   REAL: 2444, FAKE: 11902
+2025-08-20 23:20:53,264 - DeepfakePreprocessing - INFO - create_data_splits:310 - ✓ Split info saved: /home/oxy/repo/deepfake-detection/data/processed/split_info.json
+2025-08-20 23:20:53,264 - DeepfakePreprocessing - INFO - main:357 - 
+🎉 Preprocessing completed!
+2025-08-20 23:20:53,264 - DeepfakePreprocessing - INFO - main:358 - Duration: 0:30:56.920870
+2025-08-20 23:20:53,264 - DeepfakePreprocessing - INFO - main:359 - Chunks: 479
+2025-08-20 23:20:53,265 - DeepfakePreprocessing - INFO - main:360 - Ready for training!
